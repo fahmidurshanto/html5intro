@@ -21,6 +21,11 @@
     fieldset{
         display: inline-block;
     }
+    #local-time {
+  font-size: 18px;
+  color: #333;
+}
+
     </style>
 </head>
 <body>
@@ -104,12 +109,29 @@
                 <br>
                 <input style="background-color: chocolate;" type="reset" value="Reset">
                 <input style="background-color: chocolate;" type="submit" value="Submit">
-                <h4>Buying on, <time datetime="26-8-2023">26<sup>th</sup> August, 2023 </time></h4>
+                <h4>Buying on, <div id="local-time"></div>
+                <script>
+                    // JavaScript code here
+                </script></h4>
             </form>
         </section>
     </main>
     <footer>
 
     </footer>
+    <script>
+        function updateLocalTime() {
+            const localTimeElement = document.getElementById("local-time");
+            const now = new Date();
+            const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric', hour: 'numeric', minute: 'numeric', second: 'numeric', timeZoneName: 'short' };
+            const localTimeString = now.toLocaleDateString(undefined, options);
+            localTimeElement.textContent = localTimeString;
+        }
+
+        // Update the time immediately and then every second
+        updateLocalTime();
+        setInterval(updateLocalTime, 1000);
+    </script>
+
 </body>
 </html>
