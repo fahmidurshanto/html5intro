@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table</title>
+    <link rel="stylesheet" href="styles/nav.css">
+    <style>
+        th, td{
+            border: 2px solid black;
+        }
+        table{
+            border-collapse: collapse;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="form.html">Form</a></li>
+                <li>
+                    <a href="table.html">Table</a>
+                    <ul class="dropdown">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="form.html">Form</a></li>
+                        <li><a href="table.html">Table</a></li>
+                        <li><a href="video.html">Video</a></li>
+                    </ul>
+                </li>
+                <li><a href="video.html">Video</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <table style="width: 30%; margin: 20px auto; background-color: violet;">
+                <h1><caption>Data of employee</caption></h1>
+                <thead>
+                    <tr>
+                        <th>No</th>
+                        <th>Name</th>
+                        <th>Company</th>
+                        <th>Income</th>
+                        <th>Age</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>Mark Zuckerberg</td>
+                        <td>Facebook</td>
+                        <td>$10000</td>
+                        <td>35 years</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Bil Gates</td>
+                        <td>Microsoft</td>
+                        <td>$54465</td>
+                        <td>55 years</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>Steve Jobs</td>
+                        <td>Apple</td>
+                        <td>$78454</td>
+                        <td>he just died</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td>4</td>
+                        <td colspan="4">Total Employee: 3</td>
+                    </tr>
+                </tfoot>
+            </table>
+        </section>
+        <footer style="background-color: aquamarine; width: 30%; margin: 20px auto;">
+            <h3>Table concepts</h3>
+            <ul>
+                <li>Table: table</li>
+                <li>Table Head: thead</li>
+                <li>Table Body: tbody</li>
+                <li>Table Footer: tfoot</li>
+                <li>Table Raw: tr </li>
+                <li>Table Data or Table Cell: th</li>
+                <li>Table Header: th</li>
+            </ul>
+            Copyright © 2020 by Fahmidur Shanto
+        </footer>
+    </main>
+</body>
+</html>

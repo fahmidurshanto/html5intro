@@ -1,0 +1,24 @@
+li{
+    list-style: none;
+    padding: 10px;
+    background-color: aqua;
+    border-radius: 5px;
+}
+li > a{
+    color: blueviolet;
+        text-decoration: dotted;
+}
+ul{
+    display: flex;
+    gap: 20px;
+}
+footer{
+    margin-top: 30px;
+    text-align: center;
+    margin: 0 auto;
+}
+img{
+    width: 100%;
+}
+figure{
+}
